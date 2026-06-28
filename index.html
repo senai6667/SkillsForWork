@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SkillsWork</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>输入你的技能，查找适合你的岗位！</h1>
+        <p class="sub">输入你掌握的技能（用逗号隔开），AI根据岗位匹配度排序！</p>
+        <div class="input-area">
+            <textarea id="skillsInput" rows="3" placeholder="例如：Python，JAvascript，数据分析，项目管理"></textarea>
+            <button id="recommendBtn" class="btn">推荐岗位</button>
+        </div>
+        <div id="loading" class="loading hidden">
+             正在分析岗位匹配度中...
+        </div>
+        <div id="results" class="results">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
