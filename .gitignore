@@ -1,0 +1,31 @@
+# 虚拟环境（这个必须忽略！）
+venv/
+env/
+.venv/
+
+# Python 编译缓存（Mac 上经常会生成这些垃圾文件）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 本地环境变量（存密码的，绝对不能上传）
+.env
+.flaskenv
+
+# Mac 系统文件（每次打开文件夹都会生成，很烦人）
+.DS_Store
+
+# VSCode 个人配置（每个人的习惯不同，不要上传）
+.vscode/
+.idea/
+
+# 日志文件和数据库文件
+*.log
+*.sqlite3
+*.db
+
+# 临时文件和测试文件
+*.tmp
+.pytest_cache/
+.coverage
