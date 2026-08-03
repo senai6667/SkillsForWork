@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills_for_works</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'skills_for_works.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>输入你的技能，查找适合你的岗位！</h2>
+        <p class="intro">输入你掌握的技能（用逗号隔开），AI根据岗位匹配度排序！</p>
+        <textarea name="skills" id="skills" placeholder="例如：Python, Javascript, 数据分析, 项目管理"></textarea>
+        <button id="recommand">推荐岗位</button>
+        <div class="search hidden">正在查找岗位。。。</div>
+        <div class="results">
+            <!-- <div class="no_input hidden">请输入你的技能，例如：Python，Excel，沟通能力强</div>
+            <div class="no_link hidden">后端服务器未启动？请确保后端正在运行</div>
+            <div class="content hidden">
+                <h3>后端开发工程师</h3>
+                <p class="match_level">匹配度1个技能</p>
+                <p class="match_keywords">匹配上的关键词：<span>Python</span></p>
+                <p class="works_keywords">岗位相关技能：<span>Python</span><span>go</span><span>SQL</span><span>django</span><span>flash</span><span>api</span><span>数据库</span></p>
+            </div> -->
+        </div>
+    </div>
+    <script src="{{url_for('static', filename = 'skills_for_works.js')}}"></script>
+</body>
+</html>

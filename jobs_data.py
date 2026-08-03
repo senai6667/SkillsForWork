@@ -23,5 +23,9 @@ JOBS = [
     {
         "title": "DevOps工程师",
         "jd_keywords": ["linux", "docker", "kubernetes", "ci/cd", "aws", "自动化运维"]
+    },
+    {
+        "title": "财务总监",
+        "jd_keywords": ["sap", "vlookup", "数据分析", "业财融合"]
     }
 ]
