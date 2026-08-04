@@ -25,7 +25,7 @@ def works_for_skills():
 
 @app.route('/api/api_skills_for_works', methods = ['POST'])
 
-def skills_for_works():
+def api_skills_for_works():
     data = request.get_json()
     skills_str = data.get('skills', '')
     if not skills_str:
@@ -55,7 +55,7 @@ def skills_for_works():
 
 @app.route('/api/api_works_for_skills', methods = ['POST'])
 
-def works_for_skills():
+def api_works_for_skills():
     data = request.get_json()
     works_str = data.get('works', '')
     if not works_str:
@@ -71,7 +71,7 @@ def works_for_skills():
         for title in JOBS:
             if w in title['title'].lower():
                 results.append({
-                    "title": title,
+                    "title": title['title'],
                     "skills_number": len(title['jd_keywords']),
                     "all_skills": [kw for kw in title['jd_keywords']]
                 })
