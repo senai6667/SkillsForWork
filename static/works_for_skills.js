@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1/5000/api/api_works_for_skills"
+const API_URL = "http://127.0.0.1:5000/api/api_works_for_skills"
 
 const works_input = document.getElementById('works')
 const search = document.querySelector('.search')
